@@ -28,6 +28,83 @@ a:hover {
     -webkit-transition: all 0.3s;
 }
 
+.about {
+    position: relative;
+}
+
+/* name on load */
+.name {
+	position: relative;
+    display: table;
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+
+.name-color {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+}
+
+.name-color-2 {
+	width: 100%;
+	height: 100%;
+	background-color: #ffd700;
+	position: absolute;
+	left: 0;
+}
+
+.name-text {
+    display: table-cell;
+}
+
+.name-color {
+    background: linear-gradient(to left, white 50%, #ffd700 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    animation: color-reveal 1.15s;
+    animation-timing-function: ease-in-out;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+    z-index: 1;
+}
+
+.name-color-2 {
+    animation: color-reveal-2 1.3s;
+    animation-timing-function: ease-in-out;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-delay: 1s;
+    transform: translateX(100%);
+    z-index: 2;
+}
+
+@keyframes color-reveal {
+    0% {background-position: right bottom;}
+    80% {background-position: left bottom;}
+    99% {background-position: left bottom; opacity: 1;}
+    100% {background-position: left bottom; opacity: 0;}
+}
+
+@keyframes color-reveal-2 {
+    0% {transform: translateX(0);}
+    40% {transform: translateX(0);}
+    80% {transform: translateX(200%);}
+}
+
+/* about */
+.about-text {
+    animation: appear 2s ease;
+    animation-delay: 1.75s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+@keyframes appear {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
 /* blob on hover */
 :root {
 	--background: #005;
@@ -63,4 +140,28 @@ a:hover {
         border-radius:  60% 40% 30% 70% / 60% 30% 70% 40%;
         background: linear-gradient(45deg, var(--primary) 0%, var(--secondary) 100%);
     } 
+}
+
+/* scroll down */
+.scroll-down {
+    position: fixed;
+    text-align: center;
+    width: 100%;
+    bottom: 5%;
+    left: 0;
+    animation: appear 1s ease, MoveUpDown 2s ease-in-out infinite;
+    animation-delay: 1.75s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+    font-weight: bold;
+    color: #ffd700;
+}
+
+@keyframes MoveUpDown {
+    0%, 100% {
+        bottom: 4%;
+    }
+    50% {
+        bottom: 6%;
+    }
 }

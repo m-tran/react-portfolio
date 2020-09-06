@@ -23,8 +23,12 @@
 }
 
 .navbar-link a {
-    color: #404040 !important;
+    color: #404040;
     text-decoration: none;
     font-size: 1.25em;
     font-weight: bold;
+}
+
+.navbar-link a:hover {
+    color: #ffd700;
 }

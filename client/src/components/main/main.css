@@ -1,0 +1,20 @@
+.main {
+    margin: 8em 12em 4em 12em;
+}
+
+.main h1 {
+    text-align: left;
+    line-height: 1.3em;
+    font-size: 3em;
+    color: #404040;
+}
+
+a.two-link, a.project {
+    text-decoration: underline;
+    font-weight: bold;
+    color: #ffd700;
+}
+
+.main-text a:hover {
+    color: #ffd700;
+}

@@ -1,0 +1,30 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 2em;
+    padding-right: 2em;
+    align-items: center;
+}
+
+.navbar-link {
+    display: flex;
+    margin-right: 2em;
+}
+
+.navbar-home, .navbar-links {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: auto;
+    height: 10vh;
+    margin: 1em 1em 1em 2em;
+}
+
+.navbar-link a {
+    color: #404040 !important;
+    text-decoration: none;
+    font-size: 1.25em;
+    font-weight: bold;
+}

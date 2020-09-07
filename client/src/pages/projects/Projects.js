@@ -16,7 +16,7 @@ const Projects = () => {
                 </div>
             </Grid>
             <Grid item xs={5} p={10}>
-                <a href="www.twofurnish.com"><img 
+                <a target="_blank" href="www.twofurnish.com"><img 
                     className="thumb" 
                     src={twoThumb} 
                     alt="two" 
@@ -26,7 +26,7 @@ const Projects = () => {
                 <p>Marketing, Graphic + Web Design</p>
             </Grid>
             <Grid item xs={5} className="pair">
-                <a href="www.madebypair.com"><img 
+                <a target="_blank" href="www.madebypair.com"><img 
                     className="thumb" 
                     src={pairThumb} 
                     alt="pair" 

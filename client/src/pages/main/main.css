@@ -166,6 +166,11 @@ a.project:hover {
     color: #ffd700;
 }
 
+.scroll-down a {
+    text-decoration: none;
+    color: #ffd700;
+}
+
 @keyframes MoveUpDown {
     0%, 100% {
         margin-top: 24vh;

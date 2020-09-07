@@ -14,3 +14,11 @@
   height: 100vh;
   width: auto;
 }
+
+.Contact {
+  position: relative;
+  margin-top: 7em;
+  height: 50vh;
+  width: auto;
+  background-color: #f9f850;
+}

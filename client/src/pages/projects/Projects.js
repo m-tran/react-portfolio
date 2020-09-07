@@ -18,12 +18,12 @@ const Projects = () => {
                     </div>
                 </Grid>
                 <Grid item xs={5} p={10}>
-                <Link to={{ pathname:"http://www.twofurnish.com" }} target="_blank"><img 
+                <img 
                         className="thumb" 
                         src={twoThumb} 
                         alt="two" 
                         onMouseEnter={e => (e.currentTarget.src=twoThumbGif)}
-                        onMouseLeave={e => (e.currentTarget.src=twoThumb)}/></Link>
+                        onMouseLeave={e => (e.currentTarget.src=twoThumb)}/>
                     <a href="www.twofurnish.com"><h2>two</h2></a>
                     <p>Marketing, Graphic + Web Design</p>
                 </Grid>

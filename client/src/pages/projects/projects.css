@@ -1,0 +1,21 @@
+#projects {
+    align-items: center;
+}
+
+.title h1 {
+    text-align: left;
+    color: #404040;
+    font-size: calc(56px + 1vw);
+    -webkit-text-fill-color: white; 
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #404040;
+}
+
+.thumb {
+    width: 80%;
+    height: auto;
+}
+
+.pair {
+    margin-top: 4em;
+}

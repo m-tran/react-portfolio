@@ -1,14 +1,13 @@
 .navbar {
     display: flex;
     justify-content: space-between;
-    padding-left: 2em;
-    padding-right: 2em;
     align-items: center;
 }
 
 .navbar-link {
     display: flex;
-    margin-right: 2em;
+    margin-right: 1em;
+    justify-content: flex-end;
 }
 
 .navbar-home, .navbar-links {
@@ -19,16 +18,19 @@
 .logo {
     width: auto;
     height: 10vh;
-    margin: 1em 1em 1em 2em;
+    margin: 1em 1em 1em 1em;
 }
 
-.navbar-link a {
-    color: #404040;
+Link {
     text-decoration: none;
+}
+
+.navbar-link {
+    color: #404040;
     font-size: 1.25em;
     font-weight: bold;
 }
 
-.navbar-link a:hover {
+.navbar-link:hover {
     color: #ffd700;
 }

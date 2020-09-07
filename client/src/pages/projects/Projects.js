@@ -16,23 +16,23 @@ const Projects = () => {
                 </div>
             </Grid>
             <Grid item xs={5} p={10}>
-                <img 
+                <a href="www.twofurnish.com"><img 
                     className="thumb" 
                     src={twoThumb} 
                     alt="two" 
                     onMouseEnter={e => (e.currentTarget.src=twoThumbGif)}
-                    onMouseLeave={e => (e.currentTarget.src=twoThumb)}/>
-                <h2>two</h2>
+                    onMouseLeave={e => (e.currentTarget.src=twoThumb)}/></a>
+                <a href="www.twofurnish.com"><h2>two</h2></a>
                 <p>Marketing, Graphic + Web Design</p>
             </Grid>
             <Grid item xs={5} className="pair">
-                <img 
+                <a href="www.madebypair.com"><img 
                     className="thumb" 
                     src={pairThumb} 
-                    alt="two" 
+                    alt="pair" 
                     onMouseEnter={e => (e.currentTarget.src=pairThumbGif)}
-                    onMouseLeave={e => (e.currentTarget.src=pairThumb)}/>
-                <h2>Pair</h2>
+                    onMouseLeave={e => (e.currentTarget.src=pairThumb)}/></a>
+                <a href="www.madebypair.com"><h2>Pair</h2></a>
                 <p>Brand + Web Design</p>
             </Grid>
         </Grid>
